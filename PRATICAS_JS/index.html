@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="text" id="lastName">
+    <input type="button" value="Concatenar" onclick="concatenar()">
+    <input type="text" id="concatenados">
+    
+    <script>
+    
+        function concatenar(){
+            var name = document.getElementById("name").value
+            var lastName = document.getElementById("lastName").value
+            
+            document.getElementById("concatenados").value = name + lastName
+
+        }
+
+    </script>
+</body>
+</html>
